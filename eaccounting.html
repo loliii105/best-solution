@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Accounting Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 20px 0;
+            border-bottom: 2px solid #f4f7f6;
+            margin-bottom: 30px;
+        }
+
+        .logo-link img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .logo-link img:hover { transform: scale(1.05); }
+
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 20px; }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 12px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 10px; }
+            h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index1.html" class="logo-link">
+                <img src="photos/logo1.png" alt="Company Logo">
+            </a>
+        </nav>
+
+        <h1>E-Accounting Solutions</h1>
+        <img src="photos/eaccounting.jpg" alt="E-Marketing" class="main-image">
+        
+      <div class="services-list">
+            <div class="service-item"><strong>Accounting Software:</strong> Providing free professional accounting software solutions.</div>
+            <div class="service-item"><strong>POS Tracking:</strong> Point-of-Sale services to monitor daily transactions and generate real-time reports.</div>
+            <div class="service-item"><strong>Bookkeeping:</strong> Full-cycle bookkeeping services managed by our professional team.</div>
+            <div class="service-item"><strong>Financial Reporting:</strong> Preparation and issuance of certified annual balance sheets.</div>
+        </div>
+
+        <a href="index1.html" class="back-btn">Back to home page</a>
+    </div>
+
+</body>
+</html>

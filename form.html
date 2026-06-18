@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+       
+form {
+    max-width: 500px;
+    margin: 50px auto; 
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid rgba(81, 166, 174, 0.3); 
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+
+label, h4 {
+    color: rgb(81, 166, 174);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: inherit;
+    box-sizing: border-box; 
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(81, 166, 174);
+    box-shadow: 0 0 8px rgba(81, 166, 174, 0.5);
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: rgb(81, 166, 174);
+    color: white;
+    margin-right: 10px;
+}
+
+input[type="reset"] {
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a96a3;
+    transform: translateY(-2px);
+}
+
+input[type="reset"]:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <form>
+      <fieldset>
+         <label for="txt">Name</label>
+         <input type="text" id="txt" placeholder="Enter your name" required>
+<br>
+         <label for="pass">Phone Number</label>
+         <input type="text"  id="pass" placeholder="Enter your phone number" required>
+<br>
+         <label for="Eml">Email</label>
+         <input type="email" id="Eml" placeholder="Enter your Email">
+<br>
+      <h4>Choose your Gender</h4> 
+         <input type="radio" name="Gender" id="rad1" checked>
+         <label for="rad1">Femele</label>
+         <input type="radio" name="Gender" id="rad2">
+         <label for="rad2">Male</label>
+      <h4>What type of service do you want ?</h4>
+         <textarea cols="40" rows="10" maxlength="40" minlength="10"></textarea>
+         <br>
+         <hr>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Re enter">
+      </fieldset>
+    </form>
+</body>
+</html>
