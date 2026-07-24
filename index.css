@@ -1111,27 +1111,33 @@ header {
   will-change: transform;
 }
 
-/* إضافة ترانزشن عند التكرار */
+
 @keyframes scrollLogos {
   0% {
     transform: translateX(0);
+    opacity: 0.5;
+  }
+  5% {
     opacity: 1;
   }
   45% {
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   55% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   60% {
     opacity: 1;
   }
-  100% {
-    transform: translateX(calc(-50% - 15px));
+  95% {
     opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 0.5;
   }
 }
 
