@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XonTel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#heroCarousel"><img src="photos/logo1.png" alt="" width="80px" height="80px"></a>
+    </div>
+    <button class="ham" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li class="dropdown">
+        <button class="dropbtn">Products <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">IP-PRX</a>
+          <a href="#">IP Phones</a>
+          <a href="#">IP Camera</a>
+          <a href="#">IP POE Intercom</a>
+          <a href="#">POE Access Points</a>
+          <a href="#">Speaker & Amplifier</a>
+          <a href="#">Smart products</a>
+          <a href="#">POE Switches</a>
+          <a href="#">IP-Gateways</a>
+          <a href="#">Accessories</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn">Solution<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">XonTel PBX</a>
+          <a href="#">XonTel Cell Center</a>
+          <a href="#">XonTel Ai</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn">Software <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">XonTel Application </a>
+          <a href="#">XonTel Streamer</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn">Support <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Wiki</a>
+          <a href="#">Submit Ticket </a>
+          <a href="#">FAQ </a>
+          <a href="#">Manuals & Firmwares</a>
+          <a href="#">Products Catalog</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"> Company<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">About Us</a>
+          <a href="#">Company News</a>
+          <a href="#">Our Clients</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </li>
+      <li><a href="#">Why XonTel</a></li>
+      <li class="dropdown">
+        <button class="dropbtn">Distributors <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#"> Become a Partner</a>
+          <a href="#">Find Distributors</a>
+        </div>
+      </li>
+    </ul>
+    <div class="nav-right-actions">
+      <a href="#" class="search-btn" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </a>
+      <a href="#" class="lang-btn">العربية</a>
+      <span class="divider">|</span>
+      <div class="dropdownfollow" id="followDropdown">
+        <button class="drop-btn" onclick="toggleDropdown(event)">
+          Follow Us <span class="arrow">▼</span>
+        </button>
+        <div class="dropdownfollow-content">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="YouTube">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Snapchat">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12.022 2c-3.326 0-6.02 2.694-6.02 6.02 0 1.947.925 3.681 2.355 4.794-.789.704-1.355 1.635-1.355 2.72 0 .973.435 1.848 1.119 2.446-.355.518-.768 1.185-1.284 1.994-.379.593-.787 1.233-1.258 1.942l-.399.604h8.307l-.398-.604c-.471-.709-.879-1.349-1.259-1.942-.515-.809-.928-1.476-1.283-1.994.684-.598 1.119-1.473 1.119-2.446 0-1.085-.566-2.016-1.355-2.72 1.43-1.113 2.355-2.847 2.355-4.794 0-3.326-2.694-6.02-6.022-6.02z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <div class="slider">
+    <div class="slideshow-container">
+
+      <!-- السلايدات -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="photos/XonTel-Access-Point.png" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photos/XonTel-Call-Center.png" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="photos/XonTel-IP-Phones.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- أزرار التنقل -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- الموجة (wave) -->
+      <div class="wave-shape">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path
+            d="M0,32L48,42.7C96,53,192,75,288,80C384,85,480,75,576,58.7C672,43,768,21,864,21.3C960,21,1056,43,1152,53.3C1248,64,1344,64,1392,64L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
+            fill="#ffffff"></path>
+        </svg>
+      </div>
+
+    </div> <!-- نهاية slideshow-container -->
+
+    <!-- ===== النقاط تحت الكروزل ===== -->
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </div> <!-- نهاية slider -->
+
+  <main>
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="images-container fade-in-left">
+          <div class="image-box big-yellow">
+            <img src="photos/slider1.jpg" alt="Professional Headset">
+          </div>
+          <div class="image-box small-woman">
+            <img src="photos/slider2.jpg" alt="Woman wearing headset">
+          </div>
+          <div class="image-box small-man">
+            <img src="photos/slider3.jpg" alt="Smiling man showing thumbs up">
+          </div>
+        </div>
+        <div class="text-container fade-in-right">
+          <h2>About XonTel</h2>
+          <p>A leading provider of smart communications and advanced business systems since 2004. Based in Kuwait, we
+            deliver reliable, AI-powered solutions including unified communications, contact centers, cloud integration,
+            smart home integration, and IoT security systems to enterprises and government entities across the Middle
+            East. Proud owner and developer of the TelSip Communications Network, we are an IEEE member and CE
+            certified.</p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main2 Section -->
+    <section class="main2-section">
+      <div class="main2-bg">
+        <img src="photos/wide" alt="Background Illustration" class="main2-static-image">
+      </div>
+      <div class="main2-content">
+        <h1 class="main2-fade-top">XonTel delivers cutting-edge communication technologies tailored for modern
+          businesses</h1>
+        <h3>XonTel System Solutions</h3>
+        <ul class="main2-list main2-fade-bottom">
+          <li><strong>XonTel PBX Manager:</strong> A powerful telephony platform offering flexible, secure, and
+            cost-effective voice communication.</li>
+          <li><strong>XonTel Call Center:</strong> A complete omnichannel customer service suite with real-time
+            monitoring, and smart routing.</li>
+          <li><strong>XonTel AI:</strong> AI-enhanced tools that automate interactions, analyze customer sentiment, and
+            boost productivity.</li>
+          <li><strong>XonTel Mobile App:</strong> A feature-rich mobile solution that enables seamless communication and
+            business management on the go.</li>
+        </ul>
+        <a href="#" class="main2-btn">Explore Solutions</a>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION (المعدل) ===== -->
+    <section class="products-section">
+      <div class="products-header">
+        <h2 class="section-title">XonTel PRODUCTS</h2>
+        <a href="#" class="see-all-btn">See All Categories</a>
+      </div>
+
+      <div class="products-carousel-wrapper">
+        <div class="products-container" id="productsContainer">
+          <!-- 1. Speaker & Amplifier -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="photos/1" alt="Speaker & Amplifier">
+                <h3>Speaker & Amplifier</h3>
+              </div>
+              <div class="flip-card-back">
+                <h4>Speaker & Amplifier</h4>
+                <h5>Products Features</h5>
+                <ul>
+                  <li>Connect XT-20BA link out to 3pcs XT-20BP analog Ceiling Speakers (Direct with cable).</li>
+                  <li>High-frequency remote control, 360 degree ,non-directional.</li>
+                  <li>Bluetooth 5.0 Technology, 15M Coverage.</li>
+                </ul>
+                <a href="#" class="read-more-btn">Read More &rarr;</a>
+              </div>
+            </div>
+            <div class="card-title-bottom">Speaker & Amplifier</div>
+          </div>
+
+          <!-- 2. Smart products -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="photos/2" alt="Smart products">
+                <h3>Smart products</h3>
+              </div>
+              <div class="flip-card-back">
+                <h4>Smart products</h4>
+                <h5>Products Features</h5>
+                <ul>
+                  <li>XonTel smart light switch looks and acts like any traditional light switch.</li>
+                  <li>Smoke Detector</li>
+                  <li>Window Shutter Switch</li>
+                </ul>
+                <a href="#" class="read-more-btn">Read More &rarr;</a>
+              </div>
+            </div>
+            <div class="card-title-bottom">Smart products</div>
+          </div>
+
+          <!-- 3. POE Switches -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="photos/3" alt="POE Switches">
+                <h3>POE Switches</h3>
+              </div>
+              <div class="flip-card-back">
+                <h4>POE Switches</h4>
+                <h5>Products Features</h5>
+                <ul>
+                  <li>Connect all of your devices easily and reduce wires connections.</li>
+                  <li>Support POE.</li>
+                  <li>Internal Power Supply</li>
+                  <li>Suitable for Business or Home usage</li>
+                  <li>1 year warranty</li>
+                </ul>
+                <a href="#" class="read-more-btn">Read More &rarr;</a>
+              </div>
+            </div>
+            <div class="card-title-bottom">POE Switches</div>
+          </div>
+
+          <!-- 4. POE Access Points -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="photos/router" alt="POE Access Points">
+                <h3>POE Access Points</h3>
+              </div>
+              <div class="flip-card-back">
+                <h4>POE Access Points</h4>
+                <h5>Products Features</h5>
+                <ul>
+                  <li>Better coverage and distribution of the Internet in all areas.</li>
+                  <li>Support 5G.</li>
+                  <li>Control all your APs from one Place.</li>
+                  <li>Support up to 100 device.</li>
+                  <li>5 Years Warranty.</li>
+                </ul>
+                <a href="#" class="read-more-btn">Read More &rarr;</a>
+              </div>
+            </div>
+            <div class="card-title-bottom">POE Access Points</div>
+          </div>
+        </div>
+
+        <!-- أزرار الأسهم -->
+        <div class="slider-arrows">
+          <button class="arrow-btn prev-btn" id="prevBtn" aria-label="Previous">&larr;</button>
+          <button class="arrow-btn next-btn" id="nextBtn" aria-label="Next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Slider Section -->
+    <section class="features-slider-section"
+      style="background-color: #ffffff !important; background: #ffffff !important;">
+      <div class="slider-container">
+        <div class="slide active" data-slide="1">
+          <div class="slide-text-content">
+            <h2 class="slide-title">The XonTel Features & Plans are designed for every kind of Customer Care</h2>
+            <h3 class="slide-subtitle">Call Center System</h3>
+            <p class="slide-desc">Multi Campaign management. Multi Skill based routing. CTI phone bar with a
+              professional SIP client.</p>
+            <a href="#" class="feature-read-more">Read More</a>
+          </div>
+          <div class="slide-image-content">
+            <div class="background-frame"></div>
+            <div class="floating-images">
+              <img src="photos/uZdt0K1NFc-1.webp" alt="Call Center Agent 1" class="img-back">
+              <img src="photos/KQ9ciF2gZA-1.webp" alt="Call Center Agent 2" class="img-front">
+            </div>
+          </div>
+        </div>
+        <div class="slide" data-slide="2">
+          <div class="slide-text-content">
+            <h2 class="slide-title">XonTel Mobile App</h2>
+            <h3 class="slide-subtitle">XonTel Application</h3>
+            <p class="slide-desc">Is a free digital phone application that supports SIP which provides a comfortable
+              interface that is easy to handle, as well as high quality voice for VoIP communications.</p>
+            <a href="#" class="feature-read-more">Read More</a>
+          </div>
+          <div class="slide-image-content">
+            <div class="background-frame"></div>
+            <div class="floating-images">
+              <img src="photos/WEB-smartphone-mock-up.webp" alt="Mobile App 1" class="img-back">
+              <img src="photos/WEB-smartphone-mock-up.webp" alt="Mobile App 2" class="img-front">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-indicators">
+        <span class="indicator active" onclick="currentSlide(1)">
+          <span class="num">1</span>
+          <span class="line"></span>
+        </span>
+        <span class="indicator" onclick="currentSlide(2)">
+          <span class="num">2</span>
+          <span class="line"></span>
+        </span>
+      </div>
+    </section>
+
+    <!-- Device Hero -->
+    <section class="device-hero-section">
+      <div class="device-container">
+        <div class="device-image-wrapper">
+          <img src="photos/Mask-Group-25.webp" alt="XonTel MS IP-PBX" class="device-img">
+        </div>
+        <div class="device-content">
+          <h2 class="device-title">XonTel MS IP-PBX</h2>
+          <p class="device-subtitle">Smoothly manage your phone system</p>
+          <p class="device-desc">The XonTel Plus PBX is a multi-functional and all-in-one PBX, which integrates voice
+            service which is VoIP and PSTN.</p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intercom -->
+    <section class="intercom-section">
+      <div class="intercom-container">
+        <div class="intercom-image-wrapper">
+          <img src="photos/man.webp" alt="XT-13P Intercom" class="intercom-img">
+        </div>
+        <div class="intercom-content">
+          <p class="intercom-top-text">For Your Home.</p>
+          <h2 class="intercom-title">XT-13P IP Indoor LCD Panel Intercom</h2>
+          <ul class="intercom-list">
+            <li>Support up to 6 Gates (XT-10P intercom).</li>
+            <li>Ultra clear, stylish appearance.</li>
+            <li>Thin profile and small footprint.</li>
+            <li>7" capacitive touch screen with energy saving mode</li>
+          </ul>
+          <a href="#" class="intercom-btn">Show More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients-section">
+      <h2 class="clients-title">OUR CLIENTS</h2>
+      <div class="clients-slider">
+        <div class="clients-track">
+          <div class="client-card"><img src="photos/Zain-300x134.webp" alt="Client 1"></div>
+          <div class="client-card"><img src="photos/logo.webp" alt="Client 2"></div>
+          <div class="client-card"><img src="photos/Interteleco-300x298.webp" alt="Client 3"></div>
+          <div class="client-card"><img src="photos/mada.webp" alt="Client 3"></div>
+          <div class="client-card"><img src="photos/Zain-300x134.webp" alt="Client 4"></div>
+          <div class="client-card"><img src="photos/logo.webp" alt="Client 5"></div>
+          <div class="client-card"><img src="photos/Interteleco-300x298.webp" alt="Client 1"></div>
+          <div class="client-card"><img src="photos/mada.webp" alt="Client 3"></div>
+          <!-- <div class="client-card"><img src="photos/Zain-300x134.webp" alt="Client 2"></div>
+          <div class="client-card"><img src="photos/logo.webp" alt="Client 5"></div>
+          <div class="client-card"><img src="photos/Interteleco-300x298.webp" alt="Client 1"></div>
+          <div class="client-card"><img src="photos/mada.webp" alt="Client 3"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-overlay"></div>
+      <div class="cta-content">
+        <h1>Lets Start! Get In Touch With Us.</h1>
+        <p>Manufacturing IP Phone and IP-PBX Systems,</p>
+        <a href="#contact" class="cta-btn">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="#">IP Phones</a></li>
+          <li><a href="#">IP PBX</a></li>
+          <li><a href="#">IP-Gateways</a></li>
+          <li><a href="#">IP Intercom</a></li>
+          <li><a href="#">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Call Center System</h3>
+        <ul>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Reports & Monitoring</a></li>
+          <li><a href="#">Customer Follow Up</a></li>
+          <li><a href="#">CRM</a></li>
+          <li><a href="#">Call Control</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Products Catalog</a></li>
+          <li><a href="#">Remote Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col company-info">
+        <h2 class="footer-logo">Xon<span>Tel</span></h2>
+        <p>Manufacturing IP Phone and IP-PBX Systems, Mobile Applications and Web Development, Cloud Services.</p>
+        <p>Network Solutions, CCTV Cameras and Security Systems.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright 2026 - Alaa Tamer</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ===== Hero Slider with Dots =====
+    let slideIndex = 0;
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+
+      // إخفاء كل الصور
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      // إزالة كلاس active من النقاط
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      // التحرك للصورة التالية
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+
+      // إظهار الصورة الحالية
+      slides[slideIndex - 1].style.display = "block";
+
+      // إضافة كلاس active على النقطة الحالية
+      if (dots[slideIndex - 1]) {
+        dots[slideIndex - 1].className += " active";
+      }
+
+      setTimeout(showSlides, 2500);
+    }
+
+    // دالة للتحكم اليدوي بالنقاط (اختياري)
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+
+    // تشغيل السلايدر
+    showSlides();
+
+    // ===== Hamburger Menu =====
+    const hamButton = document.getElementById('ham');
+    const navLinks = document.getElementById('navLinks');
+
+    hamButton.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+
+    // ===== DROPDOWN TOGGLE ON MOBILE (الحل المضمون) =====
+    // نختار كل عناصر الـ dropdown في القائمة الرئيسية
+    const allDropdowns = document.querySelectorAll('.nav-links .dropdown');
+
+    allDropdowns.forEach(function (dropdown) {
+      // نختار الزر داخل كل dropdown
+      const btn = dropdown.querySelector('.dropbtn');
+
+      // نضيف حدث الضغط على الزر
+      btn.addEventListener('click', function (event) {
+        // نمنع الحدث من الانتشار للأعلى
+        event.stopPropagation();
+        // نمنع تحميل الصفحة لو كان الزر يعمل كـ link
+        event.preventDefault();
+
+        // نضيف أو نزيل class "open" على الـ dropdown
+        dropdown.classList.toggle('open');
+
+        // نقفل جميع الـ dropdowns الأخرى (تفتح واحدة فقط)
+        allDropdowns.forEach(function (other) {
+          if (other !== dropdown) {
+            other.classList.remove('open');
+          }
+        });
+      });
+    });
+
+    // ===== Intersection Observer =====
+    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.2 };
+    const observerCallback = function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const fadeLeftElement = document.querySelector('.fade-in-left');
+    const fadeRightElement = document.querySelector('.text-container');
+    if (fadeLeftElement) observer.observe(fadeLeftElement);
+    if (fadeRightElement) observer.observe(fadeRightElement);
+
+    // ===== Follow Dropdown =====
+    function toggleDropdown(event) {
+      event.stopPropagation();
+      const dropdown = document.getElementById('followDropdown');
+      dropdown.classList.toggle('active');
+    }
+    window.addEventListener('click', function () {
+      const dropdown = document.getElementById('followDropdown');
+      if (dropdown && dropdown.classList.contains('active')) {
+        dropdown.classList.remove('active');
+      }
+    });
+
+    // ===== Features Slider =====
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.features-slider-section .slide');
+    const indicators = document.querySelectorAll('.indicator');
+    function showSlide(index) {
+      slides.forEach(function (slide, i) {
+        slide.classList.remove('active');
+        indicators[i].classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+          indicators[i].classList.add('active');
+        }
+      });
+    }
+    function currentSlide(num) {
+      currentSlideIndex = num - 1;
+      showSlide(currentSlideIndex);
+    }
+    setInterval(function () {
+      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+      showSlide(currentSlideIndex);
+    }, 5000);
+
+    // ===== Products Carousel =====
+    (function () {
+      const container = document.getElementById('productsContainer');
+      const cards = container.querySelectorAll('.flip-card');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      let currentIndex = 0;
+      let cardsPerView = getCardsPerView();
+
+      function getCardsPerView() {
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 4;
+      }
+
+      function updateCarousel() {
+        const total = cards.length;
+        const maxIndex = total - cardsPerView;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        const cardWidth = cards[0].offsetWidth + 20;
+        const offset = currentIndex * cardWidth;
+        container.style.transform = 'translateX(-' + offset + 'px)';
+
+        if (prevBtn && nextBtn) {
+          prevBtn.style.display = (currentIndex === 0) ? 'none' : 'flex';
+          nextBtn.style.display = (currentIndex >= maxIndex) ? 'none' : 'flex';
+        }
+      }
+
+      function goToPrev() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      }
+
+      function goToNext() {
+        const total = cards.length;
+        const maxIndex = total - cardsPerView;
+        if (currentIndex < maxIndex) {
+          currentIndex++;
+          updateCarousel();
+        }
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', goToPrev);
+      if (nextBtn) nextBtn.addEventListener('click', goToNext);
+
+      let resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          const newCardsPerView = getCardsPerView();
+          if (newCardsPerView !== cardsPerView) {
+            cardsPerView = newCardsPerView;
+            const total = cards.length;
+            const maxIndex = total - cardsPerView;
+            if (currentIndex > maxIndex) currentIndex = Math.max(0, maxIndex);
+            updateCarousel();
+          } else {
+            updateCarousel();
+          }
+        }, 200);
+      });
+
+      setTimeout(updateCarousel, 100);
+    })();
+
+  </script>
+</body>
+
+</html>
