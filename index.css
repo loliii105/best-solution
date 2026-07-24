@@ -1080,6 +1080,7 @@ header {
 }
 
 /* ===== CLIENTS ===== */
+/* ===== قسم العملاء مع ترانزشن سلس (شغال على كل الأجهزة) ===== */
 .clients-section {
   padding: 60px 0;
   background-color: #f4f6f9 !important;
@@ -1100,58 +1101,60 @@ header {
   position: relative;
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
 }
 
-/* ===== قسم العملاء مع ترانزشن سلس ===== */
 .clients-track {
-  display: inline-flex;
+  display: flex;
   gap: 30px;
+  width: max-content;
   animation: scrollLogos 20s linear infinite;
   will-change: transform;
 }
 
-
+/* ===== الترانزشن عند التكرار ===== */
 @keyframes scrollLogos {
   0% {
     transform: translateX(0);
-    opacity: 0.5;
-  }
-  5% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  55% {
-    opacity: 0.5;
-  }
-  60% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
   }
   100% {
     transform: translateX(-50%);
-    opacity: 0.5;
   }
 }
 
-/* عند التمرير بالماوس توقف الحركة */
+/* ===== إضافة تأثير التلاشي في البداية والنهاية ===== */
+.clients-slider::before,
+.clients-slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-slider::before {
+  left: 0;
+  background: linear-gradient(to right, #f4f6f9 0%, transparent 100%);
+}
+
+.clients-slider::after {
+  right: 0;
+  background: linear-gradient(to left, #f4f6f9 0%, transparent 100%);
+}
+
+/* ===== توقف الحركة عند التمرير ===== */
 .clients-slider:hover .clients-track {
   animation-play-state: paused;
 }
 
-/* تحسين شكل البطاقات */
+/* ===== بطاقات العملاء ===== */
 .client-card {
   background-color: #ffffff;
   border: 1px solid #e9ecef;
   border-radius: 12px;
   width: 180px;
+  min-width: 180px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -1172,6 +1175,39 @@ header {
   object-fit: contain;
 }
 
+/* ===== تحسين الأداء على الموبايل ===== */
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 40px 0;
+  }
+
+  .clients-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .clients-track {
+    gap: 20px;
+    animation-duration: 15s; /* أسرع قليلاً على الموبايل */
+  }
+
+  .client-card {
+    width: 140px;
+    min-width: 140px;
+    height: 80px;
+  }
+
+  .client-card img {
+    max-width: 90px;
+    max-height: 45px;
+  }
+
+  /* إخفاء التلاشي على الموبايل (اختياري) */
+  .clients-slider::before,
+  .clients-slider::after {
+    width: 40px;
+  }
+}
 @keyframes scrollLogos {
   0% {
     transform: translateX(0);
